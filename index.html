@@ -19,33 +19,35 @@
   <link rel="stylesheet" href="css/owl.theme.css">
   <script src="js/modernizr.js"></script>
   <link rel="shortcut icon" href="https://imgur.com/Z0tBcy8.png">
+  <link rel="stylesheet" href="css/Lightbox.css">
+  <script src="js/Lightbox.js"></script>
 
   <style>
     ul.local {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-        padding-left: 43.5%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      padding-left: auto;
     }
-    
+
     li.local {
-        float: left;
+      float: left;
     }
-    
+
     li.local a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
     }
-    
+
     li.local a:hover {
-        background-color: #111;
+      background-color: #111;
     }
-    </style>
+  </style>
 </head>
 
 
@@ -57,14 +59,9 @@
 
   <ul class="local">
     <li class="local" style="margin-bottom: 0px">
-      <a href="#home">Home</a>
+      <a href="#home">Mayom Keereerad - 3D Environment and UI/GUI Artist </a>
     </li>
-    <li class="local" style="margin-bottom: 0px">
-      <a href="#home">About me</a>
-    </li>
-    <li class="local" style="margin-bottom: 0px">
-      <a href="#home">Contact</a>
-    </li>
+    
   </ul>
 
   <!-- Some of my Work Section
@@ -76,7 +73,7 @@
           <div class="columns portfolio-item">
             <div class="item-wrap">
               <a href="#modal-01" title="">
-                <img alt="" src="https://i.imgur.com/Hb60rSl.png">
+                <img alt="" src="https://i.imgur.com/AwR3626.png">
                 <div class="overlay">
                   <div class="portfolio-item-meta">
                     <h5>Deadline</h5>
@@ -92,7 +89,7 @@
           <div class="columns portfolio-item">
             <div class="item-wrap">
               <a href="#modal-02" title="">
-                <img alt="" src="https://i.imgur.com/Hb60rSl.png">
+                <img alt="" src="https://i.imgur.com/yGWFzTB.png">
                 <div class="overlay">
                   <div class="portfolio-item-meta">
                     <h5>Deadline</h5>
@@ -129,7 +126,7 @@
                 <div class="overlay">
                   <div class="portfolio-item-meta">
                     <h5>Artwork 4</h5>
-                    <p>What Is Is</p>
+                    <p>Info</p>
                   </div>
                 </div>
                 <div class="link-icon">
@@ -146,7 +143,7 @@
                 <div class="overlay">
                   <div class="portfolio-item-meta">
                     <h5>Artwork 5</h5>
-                    <p>What Is Is</p>
+                    <p>Info</p>
                   </div>
                 </div>
                 <div class="link-icon">
@@ -163,7 +160,7 @@
                 <div class="overlay">
                   <div class="portfolio-item-meta">
                     <h5>Artwork 6</h5>
-                    <p>What Is Is</p>
+                    <p>Info</p>
                   </div>
                 </div>
                 <div class="link-icon">
@@ -180,7 +177,7 @@
                 <div class="overlay">
                   <div class="portfolio-item-meta">
                     <h5>Artwork 7</h5>
-                    <p>What Is Is</p>
+                    <p>Info</p>
                   </div>
                 </div>
                 <div class="link-icon">
@@ -197,7 +194,7 @@
                 <div class="overlay">
                   <div class="portfolio-item-meta">
                     <h5>Artwork 8</h5>
-                    <p>What Is Is</p>
+                    <p>Info</p>
                   </div>
                 </div>
                 <div class="link-icon">
@@ -209,16 +206,89 @@
         </div>
       </div>
       <div id="modal-01" class="popup-modal mfp-hide">
-         
-        <img class="scale-with-grid" width="100%" height="auto" src="https://i.imgur.com/T0IiXOv.png" alt="" />  
-        <img class="scale-with-grid" width="100%" height="auto" src="https://i.imgur.com/R7Bs0wy.png" alt="" />
-        <img class="scale-with-grid" width="100%" height="auto" src="https://i.imgur.com/K1nR1cY.png" alt="" /> 
-        <img class="scale-with-grid" width="100%" height="auto" src="https://i.imgur.com/d6UP2qw.png" alt="" /> 
-        <img class="scale-with-grid" width="100%" height="auto" src="https://i.imgur.com/Xs70zaJ.png" alt="" />
+
         <div class="description-box">
+          <div class="row">
+            <div class="column" style="width: 20%">
+              <img src="https://i.imgur.com/NswKKn1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column" style="width: 20%">
+              <img src="https://i.imgur.com/TH0gmA4.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column" style="width: 20%">
+              <img src="https://i.imgur.com/Hb60rSl.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column" style="width: 20%">
+              <img src="https://i.imgur.com/Fc3kKWf.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+            <div class="column" style="width: 20%">
+              <img src="https://i.imgur.com/jGV9dy6.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+          </div>
+
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+              <div class="mySlides">
+                <div class="numbertext">1 / 5</div>
+                <img src="https://i.imgur.com/T0IiXOv.png" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">2 / 5</div>
+                <img src="https://i.imgur.com/R7Bs0wy.png" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">3 / 5</div>
+                <img src="https://i.imgur.com/K1nR1cY.png" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">4 / 5</div>
+                <img src="https://i.imgur.com/d6UP2qw.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">5 / 5</div>
+                <img src="https://i.imgur.com/Xs70zaJ.png" style="width:100%">
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+              <div class="column"style="width: 20%">
+                <img class="demo" src="https://i.imgur.com/NswKKn1.png" onclick="currentSlide(1)" alt="Power-ups">
+              </div>
+
+              <div class="column"style="width: 20%">
+                <img class="demo" src="https://i.imgur.com/TH0gmA4.png" onclick="currentSlide(2)" alt="Players Bar">
+              </div>
+
+              <div class="column"style="width: 20%">
+                <img class="demo" src="https://i.imgur.com/Hb60rSl.png" onclick="currentSlide(3)" alt="Title Screen">
+              </div>
+
+              <div class="column"style="width: 20%">
+                <img class="demo" src="https://i.imgur.com/Fc3kKWf.png" onclick="currentSlide(4)" alt="Controls">
+              </div>
+
+              <div class="column"style="width: 20%">
+                <img class="demo" src="https://i.imgur.com/jGV9dy6.png" onclick="currentSlide(5)" alt="Death Screen">
+              </div>
+            </div>
+          </div>
+
           <h4>Deadline UI/GUI</h4>
           <p>
-           
+            Working on Deadline, I was in charge of UI creation. My plan with UI was to create something that would be sleek and modern
+            to match the environment stylings. The aim of the UI was to show as much information as possible for the player
+            without sacrificing valuable screen space. The resulting style consisted of sloping angles and sharply defined
+            icons with vibrant colours to differentiate both players UI pieces.
           </p>
           <span class="categories">
             <i class="fa fa-tag"></i>Ui,Gui,User interface, Deadline</span>
@@ -231,127 +301,132 @@
       <div id="modal-02" class="popup-modal mfp-hide">
         <img class="scale-with-grid" src="https://i.imgur.com/pg6bN0g.png" alt="" />
         <div class="description-box">
-            <h4>Deadline Game Environment</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <span class="categories">
-              <i class="fa fa-tag"></i>Deadline, Environment, Assets</span>
+          <h4>Deadline Game Environment</h4>
+          <p>
+              My job during Deadline was the creation of the Environment and all assets that fill it. The goal of the environment was 
+              to create a deep palette of colours with warm neon colours. Vibrant neon glow and a staccato of shadows to emphasize the 
+              bloom and emmisive effects that comprise the environment.
+            <br>
+            <br>
+            Assets were made to be low poly to give breathing room for the AI and the sheer number of enemies, we needed to make sure 
+            that the framerate was as high as possible, and balance that with making the assets look as good as possible. Each segment 
+            of the map followed a slightly different style, from the maintenance halls to the catwalks that hung over the storage 
+            facility.
+          </p>
+          <span class="categories">
+            <i class="fa fa-tag"></i>Deadline, Environment, Assets</span>
         </div>
         <div class="link-box">
-            <a href="#" download class="button">VISIT PAGE</a>
-            <a class="popup-modal-dismiss button btn-close">Close</a>
+          <a href="#" download class="button">VISIT PAGE</a>
+          <a class="popup-modal-dismiss button btn-close">Close</a>
         </div>
       </div>
       <div id="modal-03" class="popup-modal mfp-hide">
         <img class="scale-with-grid" src="https://i.imgur.com/lnOafMg.png" alt="" />
         <div class="description-box">
-            <h4>Candy Slinger</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <span class="categories">
-              <i class="fa fa-tag"></i>Cartoony, Game Jam, Sprites, Candy Slinger </span>
+          <h4>Candy Slinger</h4>
+          <p>
+            During this project I spent my time working on the game's UI and sprite assets. The colours were made to be warm and inviting
+            while the soft outlines, puffy colouring, and glossy effects assisted in making the game simple and easy to look at. The stylings
+            of the game revolve around candy, because of this all sprites made relate to candy in some form. For example, speed boosts are 
+            peppermint candy while the hammers are lollipops.
+          </p>
+          <span class="categories">
+            <i class="fa fa-tag"></i>Cartoony, Game Jam, Sprites, Candy Slinger </span>
         </div>
         <div class="link-box">
-            <a href="#" download class="button">VISIT PAGE</a>
-            <a class="popup-modal-dismiss button btn-close">Close</a>
+          <a href="#" download class="button">VISIT PAGE</a>
+          <a class="popup-modal-dismiss button btn-close">Close</a>
         </div>
       </div>
       <div id="modal-04" class="popup-modal mfp-hide">
-       <img class="scale-with-grid" src="https://i.imgur.com/5enjW3E.png" alt="" />
+        <img class="scale-with-grid" src="https://i.imgur.com/5enjW3E.png" alt="" />
         <div class="description-box">
-            <h4>ARTWORK DESCRIPTION</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <span class="categories">
-              <i class="fa fa-tag"></i>SOME, TAGS, HERE</span>
+          <h4>ARTWORK DESCRIPTION</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <span class="categories">
+            <i class="fa fa-tag"></i>SOME, TAGS, HERE</span>
         </div>
         <div class="link-box">
-            <a href="#" download class="button">VISIT PAGE</a>
-            <a class="popup-modal-dismiss button btn-close">Close</a>
+          <a href="#" download class="button">VISIT PAGE</a>
+          <a class="popup-modal-dismiss button btn-close">Close</a>
         </div>
       </div>
       <div id="modal-05" class="popup-modal mfp-hide">
-           <img class="scale-with-grid" src="https://i.imgur.com/5enjW3E.png" alt="" />
+        <img class="scale-with-grid" src="https://i.imgur.com/5enjW3E.png" alt="" />
         <div class="description-box">
-            <h4>ARTWORK DESCRIPTION</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <span class="categories">
-              <i class="fa fa-tag"></i>SOME, TAGS, HERE</span>
+          <h4>ARTWORK DESCRIPTION</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <span class="categories">
+            <i class="fa fa-tag"></i>SOME, TAGS, HERE</span>
         </div>
         <div class="link-box">
-            <a href="#" download class="button">VISIT PAGE</a>
-            <a class="popup-modal-dismiss button btn-close">Close</a>
+          <a href="#" download class="button">VISIT PAGE</a>
+          <a class="popup-modal-dismiss button btn-close">Close</a>
         </div>
       </div>
       <div id="modal-06" class="popup-modal mfp-hide">
-          <img class="scale-with-grid" src="https://i.imgur.com/5enjW3E.png" alt="" />
+        <img class="scale-with-grid" src="https://i.imgur.com/5enjW3E.png" alt="" />
         <div class="description-box">
-            <h4>ARTWORK DESCRIPTION</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <span class="categories">
-              <i class="fa fa-tag"></i>SOME, TAGS, HERE</span>
+          <h4>ARTWORK DESCRIPTION</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <span class="categories">
+            <i class="fa fa-tag"></i>SOME, TAGS, HERE</span>
         </div>
         <div class="link-box">
-            <a href="#" download class="button">VISIT PAGE</a>
-            <a class="popup-modal-dismiss button btn-close">Close</a>
+          <a href="#" download class="button">VISIT PAGE</a>
+          <a class="popup-modal-dismiss button btn-close">Close</a>
         </div>
       </div>
       <div id="modal-07" class="popup-modal mfp-hide">
-          <img class="scale-with-grid" src="https://i.imgur.com/5enjW3E.png" alt="" />
+        <img class="scale-with-grid" src="https://i.imgur.com/5enjW3E.png" alt="" />
         <div class="description-box">
-            <h4>ARTWORK DESCRIPTION</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <span class="categories">
-              <i class="fa fa-tag"></i>SOME, TAGS, HERE</span>
+          <h4>ARTWORK DESCRIPTION</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <span class="categories">
+            <i class="fa fa-tag"></i>SOME, TAGS, HERE</span>
         </div>
         <div class="link-box">
-            <a href="#" download class="button">VISIT PAGE</a>
-            <a class="popup-modal-dismiss button btn-close">Close</a>
+          <a href="#" download class="button">VISIT PAGE</a>
+          <a class="popup-modal-dismiss button btn-close">Close</a>
         </div>
       </div>
       <div id="modal-08" class="popup-modal mfp-hide">
         <img class="scale-with-grid" src="https://i.imgur.com/5enjW3E.png" alt="" />
         <div class="description-box">
-            <h4>ARTWORK DESCRIPTION</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <span class="categories">
-              <i class="fa fa-tag"></i>SOME, TAGS, HERE</span>
+          <h4>ARTWORK DESCRIPTION</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <span class="categories">
+            <i class="fa fa-tag"></i>SOME, TAGS, HERE</span>
         </div>
         <div class="link-box">
-            <a href="#" download class="button">VISIT PAGE</a>
-            <a class="popup-modal-dismiss button btn-close">Close</a>
+          <a href="#" download class="button">VISIT PAGE</a>
+          <a class="popup-modal-dismiss button btn-close">Close</a>
         </div>
       </div>
     </div>
@@ -377,6 +452,7 @@
             </a>
           </li>
         </ul>
+        <a href="files/Mayom_resume.pdf" class="button" target="_blank"><i class="fa fa-download"></i> Download my resume</a>
         <ul class="copyright">
           <li>Template created by Anonymous</a>. With edits/fixes by Joshua Corney.</li>
         </ul>
